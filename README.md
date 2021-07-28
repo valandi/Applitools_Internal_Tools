@@ -6,9 +6,16 @@ Used for formatting Applitools logs. A continuing work in progress!
 This is a shell script used to prettify some types of Applitools logs (including logs with timestamps, and JSON logs).
 
 ### To install:
+
+1. Clone the repo:
 `git clone https://github.com/valandi/Applitools_Internal_Tools.git`
+
+2. Change directory to Applitools_Internal_Tools
 `cd Applitools_Internal_Tools`
+
+3. Run the log formatter with the help flag
 `./applitools_log_formatter.sh --help`
+
 
 ### Simple usage
 Exampe usage:
