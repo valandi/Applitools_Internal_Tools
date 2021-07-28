@@ -60,17 +60,29 @@ while getopts "$optspec" optchar; do
 					;;
 	
                 help)
+					echo "###################################################################################"
 					echo "############################  Applitools Logs formatter ###########################"
+					echo "###################################################################################"
+					echo ""
 					echo "To use, run something like: './applitools_log_formatter <path/to/logs/test_log.log>"
-					echo "Optional arguments:										 						 "
-					echo "	--silent: Run without any output						 					     "
-					echo "  Example with silent: ./applitools_log_formatter --silent test_log.logs			 "
-					echo "	--denoise: Removes timestamp noise from certain log formats						 "
-					echo "  Example with denoise: ./applitools_log_formatter --denoise test_log.logs		 "
-					echo "	--help:   Learn about this app 							 						 "
-					echo "  Example with help:   ./applitools_log_formatter --help				 			 "
-					echo "  -v:       Get current versions							 						 "
-					echo "  Example with -v: .applitools_log_formatter -v 					 			     "
+					echo ""
+					echo "Optional arguments:"
+					echo ""
+					echo " Silent Mode"
+					echo "--silent: Run without any output"
+					echo " Example with silent: ./applitools_log_formatter --silent test_log.logs"
+					echo ""
+					echo "Denoise Mode"
+					echo "--denoise: Removes timestamp noise from certain log formats"
+					echo "Example with denoise: ./applitools_log_formatter --denoise test_log.logs"
+					echo ""
+					echo "Help"
+					echo "--help:   Learn about this app"
+					echo "Example with help:   ./applitools_log_formatter --help"
+					echo ""
+					echo "Get Version"
+					echo "-v:       Get current versions"
+					echo "Example with -v: .applitools_log_formatter -v"
 					exit 0
 					;;
                 *)
